@@ -98,16 +98,13 @@
   Checked in order:
     - *contracts-dir* dynamic var  (test injection)
     - CONTRACTS_DIR env var
-    - <cwd>/contracts
-    - <cwd>/../contracts  (when running from ingestion/)"
+    - <cwd>/contracts"
   []
   (or *contracts-dir*
       (System/getenv "CONTRACTS_DIR")
       (let [cwd (System/getProperty "user.dir")]
-        (or (let [local (str cwd "/contracts")]
-              (when (.isDirectory (io/file local)) local))
-            (let [parent (str cwd "/../contracts")]
-              (when (.isDirectory (io/file parent)) parent))))))
+        (let [local (str cwd "/contracts")]
+          (when (.isDirectory (io/file local)) local)))))
 
 ;; ────────────────────────────────────────────────────────────────────────────
 ;; Runtime floor

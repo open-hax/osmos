@@ -375,7 +375,7 @@
               (ensure-source-from-contract! tenant-id source-id-str contract)))))
       (do
         (println "[bootstrap] No contracts directory found — skipping contract-driven source creation")
-        (println "[bootstrap] Set CONTRACTS_DIR env var or place contracts/ next to the ingestion package")))))
+        (println "[bootstrap] Set CONTRACTS_DIR env var or place contracts/ in the working directory")))))
 
 (defn- start-watcher!
   []

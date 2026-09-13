@@ -1,1 +1,9 @@
+target/
+.cpcache/
+.clj-kondo/.cache
+.lsp/
+*.log
+.DS_Store
+.env
+.env.local
 resources/

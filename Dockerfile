@@ -1,4 +1,4 @@
-# KMS Ingestion - Clojure Service
+# KMS Ingestion (Osmos) - Clojure Service
 FROM clojure:temurin-21-tools-deps-alpine AS build
 
 WORKDIR /app
@@ -9,7 +9,6 @@ RUN clojure -P -X:uberjar
 
 # Copy source
 COPY src ./src
-COPY resources ./resources
 
 # Build uberjar
 RUN clojure -M:uberjar

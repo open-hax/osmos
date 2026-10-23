@@ -28,3 +28,13 @@
   spore: none
   receipt-refs: b32b3f8d17a117f9d140beb1882153ef81e616ab2c5938a296c71c23bbf44880
   note: "Bound changes to the exact runtime pin and required accountability; preserve prior bytes, incoming state and branch policy. Native service proof does not qualify a later member head."
+
+- ts: 2026-10-23T10:20:56.853570Z
+  session: codex/foresight-antigravity-rollout
+  task: Publish osmos R6 reviewer runtime pin
+  p-efficiency: 0.95
+  p-friction: 0.05
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 6a8576cefa92538de928812ac5acce547e80ea9c63734af558f3c2cb04aac689
+  note: "Bound changes to the exact runtime pin and required accountability; preserve prior bytes, incoming state and branch policy. Native service proof does not qualify a later member head."
